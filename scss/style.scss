@@ -1,0 +1,144 @@
+@import "vars";
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  // width: 100%;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: $accent;
+  &__inner {
+    min-height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__link-img {
+  width: 136px;
+}
+
+.menu__btn {
+  background: transparent;
+  border: none;
+  z-index: 5;
+  position: relative;
+}
+.menu__list,
+.menu__btn-desktop {
+  display: none;
+}
+.menu__link-item {
+  display: block;
+  color: $somefonts;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+.menu li:not(:last-child) {
+  margin-bottom: 45px;
+}
+@media (max-width: 979px){
+  .menu__list {
+  margin-bottom: 0;
+  height: 328px;
+  padding: 42px 125px 45px 128px;
+  margin-top: 48px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  transition: transform 0.5s;
+  background-color: $accent;
+  transform: translateX(-100%);
+}
+.menu__list.active {
+  transform: translateX(0);
+}  
+}
+
+
+//______ DESKTOP_______//
+
+@media (min-width: 980px) {
+  .container {
+    min-width: 980px;
+    padding: 18px 30px 0 30px;
+  }
+
+  .header {
+    &__inner {
+      min-height: 77px;
+      align-items: stretch;
+    }
+  }
+
+  .logo__link-img {
+    width: 242px;
+  }
+.menu li:not(:last-child) {
+    margin-bottom: 0;
+}
+  .menu {
+    display: flex;
+   justify-content: center;
+    align-items: baseline;
+    &__btn {
+      display: none;
+    }
+    &__list {
+  display: flex;
+      
+    }
+    &__link-item {
+      margin-right: 35px;
+    
+      color: $somefonts;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+    }
+    &__btn-desktop {
+      width: 170px;
+      height: 37px;
+      display: block;
+      background: $btns;
+      border: none;
+    }
+    &__btn-text {
+      color: $somefonts;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0em;
+    }
+  }
+}
