@@ -63,17 +63,20 @@ ul {
   font-weight: 800;
   line-height: 27px;
   letter-spacing: 0em;
+
 }
 .menu li:not(:last-child) {
   margin-bottom: 45px;
 }
 
+
 @media (max-width: 979px) {
   .menu__list {
-    margin-bottom: 0;
+   
+    margin: 0;
     height: 328px;
     padding: 42px 125px 45px 128px;
-    margin-top: 48px;
+    // margin-top: 48px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -91,22 +94,44 @@ ul {
 
 // Head section //
 
-.head__img{
-    padding: 155px;
-    // margin-top: 80px;
-    background: url('../images/layer.png'), url('../images/sphere.png'), url('../images/wave.png'), url('../images/trolley.png'), url('../images/ellipse.png'), url('../images/ellipse2.png');
-    // background-size: 209px 204px;
-    background-position: left,92% 60%,89% 45%, 70% 73%, right, 50%;
-    background-repeat: no-repeat;
-    // object-fit: contain
-    // background-attachment: 
-    // height: 204px;
-    // width: 350px;
-    // background-image: url('../images/trolley.png');
-    // width: 200px;
+.head__wrap-img {
+  // padding: 25px;
+  padding: 155px;
+  background: url("../images/shape.png"), url("../images/layer.png"),
+    url("../images/sphere.png"), url("../images/wave.png"),
+    url("../images/trolley.png"), url("../images/ellipse.png"),
+    url("../images/ellipse2.png");
+  background-position: 50% 20%, left 85%, 92% 60%, 89% 45%, 70% 73%, right,
+    left 20%;
+  background-repeat: no-repeat;
+  //   background-attachment: cover;
 }
-
-
+.wraper {
+  width: 335px;
+  margin: 0 auto;
+}
+.head__title {
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.head__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+.head__btn{
+    color: $somefonts;
+   background-color: $btns;
+    width: 335px;
+    border: none;
+    padding: 17px 0;
+    border-radius: 5px;
+}
 
 //______ DESKTOP_______//
 
@@ -135,6 +160,7 @@ ul {
     align-items: baseline;
     &__btn {
       display: none;
+      
     }
     &__list {
       display: flex;
@@ -155,6 +181,7 @@ ul {
       display: block;
       background: $btns;
       border: none;
+      border-radius: 5px;
     }
     &__btn-text {
       color: $somefonts;

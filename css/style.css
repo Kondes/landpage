@@ -77,10 +77,9 @@ ul {
 
 @media (max-width: 979px) {
   .menu__list {
-    margin-bottom: 0;
+    margin: 0;
     height: 328px;
     padding: 42px 125px 45px 128px;
-    margin-top: 48px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -101,11 +100,41 @@ ul {
   }
 }
 
-.head__img {
+.head__wrap-img {
   padding: 155px;
-  background: url("../images/layer.png"), url("../images/sphere.png"), url("../images/wave.png"), url("../images/trolley.png"), url("../images/ellipse.png"), url("../images/ellipse2.png");
-  background-position: left,92% 60%,89% 45%, 70% 73%, right, 50%;
+  background: url("../images/shape.png"), url("../images/layer.png"), url("../images/sphere.png"), url("../images/wave.png"), url("../images/trolley.png"), url("../images/ellipse.png"), url("../images/ellipse2.png");
+  background-position: 50% 20%, left 85%, 92% 60%, 89% 45%, 70% 73%, right, left 20%;
   background-repeat: no-repeat;
+}
+
+.wraper {
+  width: 335px;
+  margin: 0 auto;
+}
+
+.head__title {
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.head__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.head__btn {
+  color: #FFFFFF;
+  background-color: #75E169;
+  width: 335px;
+  border: none;
+  padding: 17px 0;
+  border-radius: 5px;
 }
 
 @media (min-width: 980px) {
@@ -159,6 +188,7 @@ ul {
     display: block;
     background: #75E169;
     border: none;
+    border-radius: 5px;
   }
   .menu__btn-text {
     color: #FFFFFF;
