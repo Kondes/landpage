@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -66,15 +65,14 @@
           </h2>
 
           <ul class="service__list">
-
             <li class="service__item">
-              <div data-path='one' class="selectField">
-                  
-                <p class="service__list-titile" id="selecttext"></p>Дизайн портала</p>
-                <img src="./images/arrdown.png" alt="" class="arrowIcon"/>
-              </div>
-              <div data-target='one' class="service__description hide" >
-                <p>
+              <input type="checkbox" class="faq-input" name faq id="faq_1" />
+              <label for="faq_1" class="service__list-titile faq-title"
+                >Дизайн портала</label
+              >
+
+              <div class="service__description hide faq-text">
+                <p class="service__descr-text">
                   Дизайн портала — это оформление контента, совокупность всех
                   графических элементов на веб-странице. Основная задача дизайна
                   — познакомить пользователя со страницей. Продуманный дизайн
@@ -84,67 +82,132 @@
             </li>
 
             <li class="service__item">
-              <div data-path='two' class="selectField">
+              <input type="checkbox" class="faq-input" name faq id="faq_2" />
+              <label for="faq_2" class="service__list-titile faq-title"
+                >Дизайн адаптивной мобильной версии
+              </label>
 
-                <p class="service__list-titile" id="selecttext">Дизайн адаптивной мобильной версии</p>
-                <img src="./images/arrdown.png" alt="" />
-              </div>
-              <div data-target='two' class="service__description hide" >
-                <p>
-                  Дизайн портала — это оформление контента, совокупность всех
-                  графических элементов на веб-странице. Основная задача дизайна
-                  — познакомить пользователя со страницей. Продуманный дизайн
-                  создает нужное впечатление о компании.
+              <div class="service__description hide faq-text">
+                <p class="service__descr-text">
+                  Мобильная версия сайта удобна для пользователя, потому что
+                  сильно упрощена по сравнению с обычной версией. Мобильная
+                  версия позволяет совершать заказ/покупку с минимумом действий.
+                  При адаптивной версии вся структура сайта автоматически
+                  подстраивается под различную ширину экрана.
                 </p>
               </div>
             </li>
 
             <li class="service__item">
-              <div data-path='three' class="selectField">
-                <p class="service__list-titile" id="selecttext">Дизайн десктопной версии</p>
-                <img src="./images/arrdown.png" alt="" />
-              </div>
-              <div data-target='three' class="service__description hide" >
-                <p>
-                  Дизайн портала — это оформление контента, совокупность всех
-                  графических элементов на веб-странице. Основная задача дизайна
-                  — познакомить пользователя со страницей. Продуманный дизайн
-                  создает нужное впечатление о компании.
+              <input type="checkbox" class="faq-input" name faq id="faq_3" />
+              <label for="faq_3" class="service__list-titile faq-title"
+                >Дизайн десктопной версии</label
+              >
+
+              <div class="service__description hide faq-text">
+                <p class="service__descr-text">
+                  Десктопную версию сайта просматривают пользователи со
+                  стационарных компьютеров. Основная цель: посерфить, углубиться
+                  в детали, получить больше информации, сравнить, выбрать,
+                  прицениться.
                 </p>
               </div>
             </li>
 
             <li class="service__item">
-              <div data-path='four' class="selectField">
-                <p class="service__list-titile" id="selecttext">Пользовательский интерфейс</p>
-                <img src="./images/arrdown.png" alt="" />
-              </div>
-              <div data-target='four' class="service__description hide" >
-                <p>
-                  Дизайн портала — это оформление контента, совокупность всех
-                  графических элементов на веб-странице. Основная задача дизайна
-                  — познакомить пользователя со страницей. Продуманный дизайн
-                  создает нужное впечатление о компании.
+              <input type="checkbox" class="faq-input" name faq id="faq_4" />
+              <label for="faq_4" class="service__list-titile faq-title"
+                >Пользовательский интерфейс
+              </label>
+
+              <div class="service__description hide faq-text">
+                <p class="service__descr-text">
+                  Цель дизайна пользовательского интерфейса - сделать
+                  взаимодействие максимально простым и эффективным, насколько
+                  это возможно, с точки зрения достижения целей пользователя.
                 </p>
               </div>
             </li>
 
             <li class="service__item">
-              <div data-path='five' id="" class="selectField">
-                <p class="service__list-titile" id="selecttext">Микро UX</p>
-                <img src="./images/arrdown.png" alt="" />
-              </div>
-              <div data-target='five' class="service__description hide" >
-                <p>
-                  Дизайн портала — это оформление контента, совокупность всех
-                  графических элементов на веб-странице. Основная задача дизайна
-                  — познакомить пользователя со страницей. Продуманный дизайн
-                  создает нужное впечатление о компании.
+              <input type="checkbox" class="faq-input" name faq id="faq_5" />
+              <label for="faq_5" class="service__list-titile faq-title"
+                >Микро UX
+              </label>
+
+              <div class="service__description hide faq-text">
+                <p class="service__descr-text">
+                  Микро-анимация может изменить восприятие продукта,
+                  пользовательское поведение и повысить конверсию. Небольшие,
+                  преимущественно функциональные анимации поддерживают
+                  пользователя: обеспечивают визуальную обратную связь и более
+                  понятно отражают происходящие изменения.
                 </p>
               </div>
             </li>
-            
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="development">
+      <div class="container">
+        <h2 class="development__title">Этапы разработки интернет-магазина</h2>
+        <div class="slider">
+          <ul class="slider-line">
+            <li class="proba">
+              <h4 class="development__second-title">1. Анализ</h4>
+              <p class="development__description">
+                Для того, чтобы онлайн-магазин приносил выгоду, перед его
+                запуском необходимо провести анализ других предложений рынка,
+                оценить конкурентов и найти наиболее удобное решение.
+              </p>
+              <img src="./images/symb.png" alt=""/>
+            </li>
+            <li>
+              <h4 class="development__second-title">2. Визуальное решение</h4>
+              <p class="development__description">
+                Разработка дизайна ключевых страниц магазина – главная, каталог,
+                информационные разделы, раздел корзины, товаров. Для нас главное
+                – передать настроение бренда, сделать удобный сайт.
+              </p>
+              <img src="./images/keks.png" alt="" />
+            </li>
+            <li>
+              <h4 class="development__second-title">
+                3. Техническая реализация
+              </h4>
+              <p class="development__description">
+                После утверждения дизайн-макета наступает следующий этап –
+                верстка. Это трудоемкий процесс: программисты должны все
+                тщательно прописать, чтобы не допустить технических ошибок.
+              </p>
+              <img src="./images/barcode.png" alt="" />
+            </li>
+            <li>
+              <h4 class="development__second-title">4. Наполнение контентом</h4>
+              <p class="development__description">
+                Создание и публикация текстов, а также видео материала. Хороший
+                контент и качественные фотографии привлекают больше посетителей
+                и помогают клиенту лучше ознакомиться с ассортиментом.
+              </p>
+              <img src="./images/group.png" alt="" />
+            </li>
+            <li>
+              <h4 class="development__second-title">5. Тестирование</h4>
+              <p class="development__description">
+                Составление плана тестирования для определения ошибок. Проверка
+                работы сайта и визуального восприятия для улучшения сайта. Также
+                используются чек-листы для четкого определения ошибок и их
+                устранения.
+              </p>
+              <img src="./images/utils.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="wrap-btn">
+          <button class="slider-prev"><</button>
+          <button class="slider-next">></button>
         </div>
       </div>
     </section>

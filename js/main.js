@@ -1,48 +1,46 @@
-let menuBtn = document.querySelector('.menu__btn');
-let menuBurg = document.querySelector('.menu__burger')
-let intervalId;
-// document.querySelectorAll('.selectField').forEach((el) => {
-//     el.addEventListener('click', () => {
-//         let content = el.nextElementSibling
-//         if (content.style.display) {
-//             document.querySelectorAll('.content').forEach((el) => el.style.display = null)
-//         } else {
-//             document.querySelectorAll('.content').forEach((el) => el.style.display = null)
-//             content.style.display = content.display + 'block'
-//         }
-//     })
-// })
+const menuBtn = document.querySelector(".menu__btn");
+const menuBurg = document.querySelector(".menu__burger");
 
-document.querySelectorAll('.selectField').forEach(e => {
-    e.addEventListener('click', e => {
-        const menu = e.currentTarget.dataset.path
-        document.querySelectorAll('.hide').forEach(e => {
-            if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                document.querySelector(`[data-target=${menu}]`).classList.add('menu-active')
-              intervalId =  setTimeout(() => {
-                  document.querySelector(`[data-target=${menu}]`).classList.add('open');
-                },0)
-            }
-            if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                clearTimeout(intervalId)
-                document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active')
-                intervalId = setTimeout(() => {
-                    document.querySelector(`[data-target=${menu}]`).classList.remove('open')
-                }, 0)
-            }
-        })
+menuBtn.addEventListener("click", function () {
+    menuBtn.classList.toggle("active");
+    menuBurg.classList.toggle("active");
+});
+
+
+const images = document.querySelectorAll('.slider .slider-line img')
+const sliderLine = document.querySelector('.slider-line')
+let count = 0;
+let width;
+
+function init() {
+    width = document.querySelector('.slider').offsetWidth;
+    sliderLine.style.width = width * images.length + 'px';
+    images.forEach(item => {
+        item.style.width = width + 'px'
+        item.style.height = 'auto'
     })
-})
-// const selecttext = document.getElementById('selecttext')
-const serviceMenu = document.querySelectorAll('.serviceMenu')
+    rollSlider()
+}
+window.addEventListener('resize',init)
+init();
 
-menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('active');
-    menuBurg.classList.toggle('active')
+document.querySelector('.slider-prev').addEventListener('click', function () {
+    count--;
+    if (count <0 ) {
+        count = images.length - 1;
+    }
+    rollSlider()
 })
 
-// selectField.addEventListener('click', function () {
-    
-//     serviceMenu.classList.toggle('hide')
-// })
-    
+document.querySelector('.slider-next').addEventListener('click', function () {
+    count++;
+    if (count >=images.length) {
+        count = 0;
+    }
+rollSlider()
+})
+
+
+function rollSlider() {
+    sliderLine.style.transform = 'translate(-'+count*width+'px)'
+}
