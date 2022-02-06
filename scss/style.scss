@@ -14,6 +14,11 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 }
+// .menu__link-item:hover{
+//     // color: hotpink;
+//      border-bottom: 3px solid #FFFFFF;
+// }
+
 a {
   text-decoration: none;
 }
@@ -44,6 +49,7 @@ ul {
   border: none;
   z-index: 5;
   position: relative;
+  cursor: pointer;
 }
 .menu__list,
 .menu__btn-desktop {
@@ -61,26 +67,45 @@ ul {
 .menu li:not(:last-child) {
   margin-bottom: 45px;
 }
-@media (max-width: 979px){
+
+@media (max-width: 979px) {
   .menu__list {
-  margin-bottom: 0;
-  height: 328px;
-  padding: 42px 125px 45px 128px;
-  margin-top: 48px;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  transition: transform 0.5s;
-  background-color: $accent;
-  transform: translateX(-100%);
+    margin-bottom: 0;
+    height: 328px;
+    padding: 42px 125px 45px 128px;
+    margin-top: 48px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    transition: transform 0.5s;
+    background-color: $accent;
+    transform: translateX(-100%);
+  }
+  .menu__list.active {
+    transform: translateX(0);
+  }
 }
-.menu__list.active {
-  transform: translateX(0);
-}  
+
+// Head section //
+
+.head__img{
+    padding: 155px;
+    // margin-top: 80px;
+    background: url('../images/layer.png'), url('../images/sphere.png'), url('../images/wave.png'), url('../images/trolley.png'), url('../images/ellipse.png'), url('../images/ellipse2.png');
+    // background-size: 209px 204px;
+    background-position: left,92% 60%,89% 45%, 70% 73%, right, 50%;
+    background-repeat: no-repeat;
+    // object-fit: contain
+    // background-attachment: 
+    // height: 204px;
+    // width: 350px;
+    // background-image: url('../images/trolley.png');
+    // width: 200px;
 }
+
 
 
 //______ DESKTOP_______//
@@ -101,23 +126,22 @@ ul {
   .logo__link-img {
     width: 242px;
   }
-.menu li:not(:last-child) {
+  .menu li:not(:last-child) {
     margin-bottom: 0;
-}
+  }
   .menu {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: baseline;
     &__btn {
       display: none;
     }
     &__list {
-  display: flex;
-      
+      display: flex;
     }
     &__link-item {
       margin-right: 35px;
-    
+
       color: $somefonts;
       font-size: 16px;
       font-style: normal;

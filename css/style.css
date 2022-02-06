@@ -53,6 +53,7 @@ ul {
   border: none;
   z-index: 5;
   position: relative;
+  cursor: pointer;
 }
 
 .menu__list,
@@ -98,6 +99,13 @@ ul {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.head__img {
+  padding: 155px;
+  background: url("../images/layer.png"), url("../images/sphere.png"), url("../images/wave.png"), url("../images/trolley.png"), url("../images/ellipse.png"), url("../images/ellipse2.png");
+  background-position: left,92% 60%,89% 45%, 70% 73%, right, 50%;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 980px) {
