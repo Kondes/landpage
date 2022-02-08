@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__bgr">
         <div class="header__inner">
           <div class="logo">
             <a class="logo__link" href="#">
@@ -151,7 +151,7 @@
     </section>
 
     <section class="development">
-      <div class="container">
+      <div class="container development__img">
         <h2 class="development__title">Этапы разработки интернет-магазина</h2>
         <div class="slider">
           <ul class="slider-line">
@@ -213,23 +213,132 @@
     </section>
 
     <section class="examples">
-      <div class="container examples_bgr">
+      <div class="container examples__bgr">
         <h2 class="examples__title">Примеры онлайн-магазинов</h2>
         <div class="example__slider">
           <ul class="example__slider-line">
-            <li>
-              <img src="./images/carts.png" alt="" />
-              <img src="./images/fen.png" alt="" />
-              <img src="./images/cake.png" alt="" />
-            </li>
-            <li>
-              <img src="./images/flower.png" alt="" />
-              <img src="./images/paints.png" alt="" />
-              <img src="./images/valik.png" alt="" />
-            </li>
+
+            <li><div class="product">
+              <div class="product-thumb">
+                <img src="./images/carts.png" alt="" class="product-thumb" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для оптовых покупок</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-thumb">
+                <img src="./images/fen.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для парикмахеров</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-thumb">
+                <img src="./images/cake.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для кондитеров</p>
+                </div>
+              </div>
+            </div>
+</li>
+
+            <li><div class="product">
+              <div class="product-thumb">
+                <img src="./images/flower.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для флористов</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-thumb">
+                <img src="./images/paints.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для визажистов</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-thumb">
+                <img src="./images/valik.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4 class="product__title">Онлайн-магазин</h4>
+                  <p class="product__descr">для художников</p>
+                </div>
+              </div>
+            </div></li>
+            
+
+            <!-- <div class="product">
+
+
+              <div class="product-thumb">
+                <img src="./images/carts.png" alt="" class="product-thumb" />
+                <div class="product-overlay">
+                  <h4>Онлайн-магазин</h4>
+                  <p>для оптовых покупок</p>
+                </div>
+              </div>
+            
+              <div class="product-thumb">
+                <img src="./images/fen.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4>Онлайн-магазин</h4>
+                  <p>для оптовых покупок</p>
+                </div>
+              </div>
+
+              <div class="product-thumb">
+                <img src="./images/cake.png" alt="" class="" />
+                <div class="product-overlay">
+                  <h4>Онлайн-магазин</h4>
+                  <p>для оптовых покупок</p>
+                </div>
+              </div>
+
+              
+
+
+            </div> -->
+            <!-- <img src="./images/cake.png" alt="" class="product-thumb" />
+              <div class="product-overlay">
+                <h4>Онлайн-магазин</h4>
+                <p>для оптовых покупок</p>
+              </div>
+            </div>
+            </div>
+
+            <li class="">
+              <img src="./images/flower.png" alt="" class="product-thumb" />
+              <div class="product-overlay">
+                <h4>Онлайн-магазин</h4>
+                <p>для оптовых покупок</p>
+              </div>
+              <img src="./images/paints.png" alt="" class="product-thumb" />
+              <div class="product-overlay">
+                <h4>Онлайн-магазин</h4>
+                <p>для оптовых покупок</p>
+              </div>
+              <img src="./images/valik.png" alt="" class="product-thumb" />
+              <div class="product-overlay">
+                <h4>Онлайн-магазин</h4>
+                <p>для оптовых покупок</p>
+              </div>
+            </li>-->
           </ul>
         </div>
-        <div class="wrap-btn">
+        <div class="example__wrap-btn">
           <button class="example__slider-prev"><</button>
           <button class="example__slider-next">></button>
         </div>
@@ -237,21 +346,131 @@
     </section>
 
     <section class="info">
-      <div class="container">
+      <div class="container info__svg">
         <h2 class="info__title">Необходимо больше информации?</h2>
         <img src="./images/barcode2.png" alt="" class="info_img" />
         <div class="info__wrap">
           <p class="info_description">
-          Если Вы владелец онлайн-магазина или только начинаете свой путь в
-          электронной коммерции и вам нужен уникальный дизайн онлайн магазина
-          для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и
-          короткий период времени, он поможет визуализировать ваш веб-проект.
-        </p>
-        <button class="info__btn">оставить заявку</button>  
+            Если Вы владелец онлайн-магазина или только начинаете свой путь в
+            электронной коммерции и вам нужен уникальный дизайн онлайн магазина
+            для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и
+            короткий период времени, он поможет визуализировать ваш веб-проект.
+          </p>
+          <button class="info__btn">оставить заявку</button>
         </div>
-        
       </div>
     </section>
+
+    <section class="contacts">
+      <div class="container contacts__bgr">
+        <h2 class="contacts__title">Обсудить проект</h2>
+        <p class="contacts__description">
+          Расскажите о своих бизнес-целях и мы поможем вам в их достижении
+        </p>
+        <form action="" class="contacts__form">
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Имя"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              title="Имя может содержать только буквы"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              placeholder="Telegram/Viber"
+              required
+              pattern="\+?[0-9\s\-\(\)]+"
+              title="+380967777777"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </form>
+        <button class="contacts__btn">Отправить</button>
+        <img src="./images/phone.png" alt="" class="contacts__img" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__bgr">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img
+              class="footer__logo"
+              src="images/logo.png"
+              alt="logo"
+              width="280"
+            />
+          </a>
+        </div>
+        <div class="footer__wrap">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <img src="./images/svg-icon/viber.svg" alt="" />
+              <p class="footer__item-name">
+                Валерия: <span>+79805585949</span>
+              </p>
+            </li>
+            <li class="footer__item">
+              <img src="./images/svg-icon/viber.svg" alt="" />
+              <p class="footer__item-name">Анна: <span>+79805585949</span></p>
+            </li>
+            <li class="footer__item">
+              <img src="./images/svg-icon/viber.svg" alt="" />
+              <p class="footer__item-name">
+                Валерия: <span>+79805585949</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__social-icon">
+          <li class="footer__social-item">
+            <a class="icon-footer" href="#">
+              <img src="./images/svg-icon/fb.svg" alt="" />
+            </a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="icon-footer" href="#">
+              <img src="./images/svg-icon/Vector.svg" alt="" />
+            </a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="icon-footer" href="">
+              <img src="./images/svg-icon/viber.svg" alt="" />
+            </a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="icon-footer" href="#">
+              <img src="./images/svg-icon/insta.svg" alt="" />
+            </a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="icon-footer" href="#">
+              <img src="./images/svg-icon/whatsapp.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__mail">hr@d-vs.com</p>
+        <p class="footer__text">Developers 2018-2021 All rights reserved</p>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
